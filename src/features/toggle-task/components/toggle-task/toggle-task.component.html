@@ -1,0 +1,7 @@
+<mat-checkbox
+  [checked]="task.completed"
+  (change)="taskFacade.toggleTask(task);"
+  (click)="$event.stopPropagation();"
+>
+  {{ withStatus ? (task | taskStatus) : null }}
+</mat-checkbox>
