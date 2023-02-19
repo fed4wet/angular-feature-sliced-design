@@ -22,7 +22,7 @@ export type GetTaskByIdParams = {
 export class TypicodeService {
   constructor(private readonly http: HttpClient) {}
 
-  getTasksList(params?: GetTasksListParams): Observable<Task[] | any> {
+  getTasksList(params?: GetTasksListParams): Observable<Task[]> {
     return this.http.get<Task[]>(`${environment.apiUrl}${BASE_URL}`, {
       params,
     });

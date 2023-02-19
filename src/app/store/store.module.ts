@@ -3,14 +3,12 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { NxModule } from '@nrwl/angular';
 import { environment } from 'src/environments';
 
 import { metaReducers, ROOT_REDUCERS, rootEffects } from './store';
 
 @NgModule({
   imports: [
-    NxModule.forRoot(), // Provide DataPersistence service: https://nx.dev/l/a/guides/misc-data-persistence#optimistic-updates
     StoreModule.forRoot(ROOT_REDUCERS, {
       metaReducers,
       runtimeChecks: {

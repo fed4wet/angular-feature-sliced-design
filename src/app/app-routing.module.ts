@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: 'task-details/:id',
     loadChildren: () =>
-      import('./task-details/task-details.module').then(
+      import('../pages/task-details/task-details.module').then(
         (m) => m.TaskDetailsModule
       ),
   },

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from 'src/pages';
+import { AppRoutingModule } from 'src/app/index';
 import { AppComponent } from 'src/app/app.component';
 import { AppStoreModule } from './store';
 
