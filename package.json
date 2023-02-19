@@ -5,7 +5,7 @@
   "sideEffects": false,
   "scripts": {
     "ng": "nx",
-    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
+    "postinstall": "node ./src/decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test"
@@ -52,9 +52,9 @@
     "@nrwl/tao": "~15.6.3",
     "@nrwl/workspace": "15.6.3",
     "@types/jest": "~29.4.0",
-    "@types/node": "~18.13.0",
-    "@typescript-eslint/eslint-plugin": "~5.51.0",
-    "@typescript-eslint/parser": "~5.51.0",
+    "@types/node": "~18.14.0",
+    "@typescript-eslint/eslint-plugin": "~5.52.0",
+    "@typescript-eslint/parser": "~5.52.0",
     "cypress": "^12.2.0",
     "eslint": "~8.34.0",
     "eslint-config-prettier": "~8.6.0",
