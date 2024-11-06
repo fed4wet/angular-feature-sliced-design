@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import {Location} from "@angular/common";
 
 @Component({
   selector: 'fs-not-found',
@@ -6,4 +7,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./not-found.page.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NotFoundPage {}
+export class NotFoundPage {
+constructor(public readonly location: Location) {
+}
+}
